@@ -1,13 +1,9 @@
+import { CategoriasPage } from './categorias/categorias.page';
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
+
   {
-    path: 'home',
-    loadComponent: () => import('./home/home.page').then((m) => m.HomePage),
-  },
-  {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full',
-  },
+    path:'categorias', loadComponent:()=> import('./categorias/categorias.page').then(c =>c.CategoriasPage)
+  }
 ];
