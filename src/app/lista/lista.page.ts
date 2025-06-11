@@ -9,8 +9,8 @@ import { IonButtons,
   IonToolbar,
   IonItem, IonLabel, 
   IonList ,
-
-
+IonThumbnail, 
+IonListHeader 
 } from '@ionic/angular/standalone';
 import { Lista, ListaService } from '../services/lista.service';
 
@@ -20,7 +20,7 @@ import { Lista, ListaService } from '../services/lista.service';
   styleUrls: ['./lista.page.scss'],
   standalone: true,
   imports: [IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule,
-    IonButtons,IonMenuButton, IonList,IonItem, IonLabel, 
+    IonButtons,IonMenuButton, IonList,IonItem, IonLabel, IonThumbnail , IonListHeader
   ]
 })
 export class ListaPage implements OnInit {
