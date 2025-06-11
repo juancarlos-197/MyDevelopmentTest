@@ -15,6 +15,7 @@ type ApiResponse = {
   page: number, per_page: number, total: number, total_pages: number, results: Lista[]
 
 }
+
 @Injectable({
   providedIn: 'root'
 })
