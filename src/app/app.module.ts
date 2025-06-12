@@ -7,18 +7,18 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from 'src/environments/environment.prod';
-import { getRemoteConfig, fetchAndActivate, getValue } from "firebase/remote-config";
-
 @NgModule({
   declarations: [
     
   ],
   imports: [
+    BrowserModule,
     CommonModule,
-    AngularFireAuthModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig)
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule,
+    AngularFireAuthModule
   ],
-    bootstrap: []
+  bootstrap: [],
 
 })
 export class AppModule { }
