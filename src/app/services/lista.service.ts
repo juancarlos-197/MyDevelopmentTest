@@ -11,6 +11,12 @@ export interface Lista {
   active: boolean
 
 }
+import { RemoteConfig, fetchAndActivate, getValue } from '@angular/fire/remote-config';
+import { AngularFireAuthModule } from '@angular/fire/compat/auth';
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { User} from "../models/user.model";
+
+
 type ApiResponse = {
   page: number, per_page: number, total: number, total_pages: number, results: Lista[]
 
@@ -21,9 +27,20 @@ type ApiResponse = {
 })
 export class ListaService {
   httpClient = inject(HttpClient)
-  getAll(): Promise<ApiResponse> {
+ //auth = inject(AngularFireAuthModule)
+
+   getAll(): Promise<ApiResponse> {
     return firstValueFrom(
       this.httpClient.get<ApiResponse>('https://peticiones.online/api/products')
     )
   }
+  /**
+   * Autenticación
+   */
+
+
+ /** signIn(user:User){
+    return signInWithEmailAndPassword(getAuth(),user.email,user.password)
+  }
+    */
 }

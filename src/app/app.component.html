@@ -1,30 +1,24 @@
 <ion-app>
- <ion-menu contentId="main-content" >
-  <ion-header>
-    <ion-toolbar>
-      <ion-title>Categoria Contedino</ion-title>
-
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding">Este es el contenido del menú.
-        <ion-button [routerLink]="['/categorias']">Lista Categorias</ion-button> 
-
-  </ion-content>
-
-</ion-menu>
-<div class="ion-page" id="main-content">
-  <ion-header>
-    <ion-toolbar>
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title> Categorias Contenido</ion-title>
-    </ion-toolbar>
-  </ion-header>
-  <ion-content class="ion-padding"> Toque el botón en la barra de herramientas para abrir el menú. </ion-content>
-
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Categoria Contedino</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding">Este es el contenido del menú.
+      <ion-button [routerLink]="['/categorias']">Lista Categorias</ion-button>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title> Categorias Contenido</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"> Toque el botón en la barra de herramientas para abrir el menú. </ion-content>
     <ion-router-outlet></ion-router-outlet>
-
-</div>
-
+  </div>
 </ion-app>

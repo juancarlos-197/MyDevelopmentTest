@@ -13,7 +13,7 @@
       <ion-title size="large">Lista Tarea</ion-title>
     </ion-toolbar>
   </ion-header>
- <ion-list-header>
+  <ion-list-header>
     <ion-label>Cetegorias en Oferta </ion-label>
   </ion-list-header>
   <ion-list>
@@ -22,12 +22,10 @@
       <ion-thumbnail slot="start">
         <img [alt]="lista.name" [src]="lista.image" />
       </ion-thumbnail>
-
       <ion-label>
         <h2>{{lista.name}}</h2>
         <p>{{lista.description}}</p>
       </ion-label>
-
     </ion-item>
     }
   </ion-list>
