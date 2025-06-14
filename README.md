@@ -73,11 +73,13 @@ Ionic CLI Instálalo con: npm install -g @ionic/cli
 
 ✅ 2. Crear el proyecto Usa el siguiente comando en tu terminal:
 
-ionic start MyDevelopmentTestPortafolio MyDevelopmentTestPortafolio es el nombre de tu app.
+ionic start MyDevelopmentTest
+
+MyDevelopmentTest es el nombre de tu app.
 
 tabs es una plantilla de ejemplo. Otras plantillas: blank → App vacía sidemenu → Menú lateral
 
-✅ 3. Entra al proyecto cd MyDevelopmentTestPortafolio
+✅ 3. Entra al proyecto cd MyDevelopmentTest
 
 ✅ 4. Ejecuta la app ionic serve Esto abrirá la app en tu navegador (http://localhost:8100).
 
